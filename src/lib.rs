@@ -201,7 +201,7 @@ async fn main() {
                                 bosses_defeated.0 = 0u8;
                             }
                             if duration_frames_value.current == 180
-                                && duration_frames_value.old == 0 
+                                && (duration_frames_value.old == 0 || frame_pointer_value.current < frame_pointer_value.old)
                             {
                                 bosses_defeated.1 = bosses_defeated.0;
                                 bosses_defeated.0 += 1u8;
@@ -246,7 +246,7 @@ async fn main() {
                             }
                             if in_odio_fight
                                 && duration_frames_value.current == 180
-                                && duration_frames_value.old == 0
+                                && (duration_frames_value.old == 0 || frame_pointer_value.current < frame_pointer_value.old)
                             {
                                 bosses_defeated.1 = bosses_defeated.0;
                                 bosses_defeated.0 += 1u8;
