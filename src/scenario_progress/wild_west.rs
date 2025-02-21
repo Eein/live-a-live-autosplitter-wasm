@@ -63,7 +63,7 @@ impl WildWest {
                 split(splits, "wild_west_mad_dog_final")
             }
             if settings.wild_west_end_split
-                && scenario_progress.current == 250
+                && (scenario_progress.current == 250 || scenario_progress.current == 260)
                 && map_id.current == 0
                 && transition_state.old == 4
                 && transition_state.current == 0
