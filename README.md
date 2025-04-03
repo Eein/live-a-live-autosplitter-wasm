@@ -9,13 +9,13 @@ A multiplatform autosplitter for Live a Live (PC)
 - Split on next chapter start (only when timer is running)
 
 # TODO:
-- [~] Character Story Splits
-   - partially done in `revamp` branch, going through to get scenario ids
+- [x] Character Story Splits
+   - basically done, some more splits in a few places may be added eventually, particularly for Distant Future chapter
 - [x] Full game ending splits
     - [x] True Ending - Sin Odio end flash (this is the main and currently only official speedrun category)
-    - [x] Incomplete Destiny Ending - cutscene after completing partial boss rush
-    - [x] Never Ending - defeat Oersted? save prompt after completion? (a change in Scenario Progress after defeating Oersted is not guaranteed, particularly in the context of multi-ending runs like All Achievements)
-    - [x] Sad Ending - skip cutscene after defeating all protagonists
+    - [x] Incomplete Destiny Ending - completion data created prompt
+    - [x] Never Ending - completion data created prompt
+    - [x] Sad Ending - completion data created prompt
     - [x] Armageddon (in Oersted route) - animation of activating the Armageddon action
 - [x] Determine a better way to handle Present Day defeated enemies.
   - counting boss defeat animations
